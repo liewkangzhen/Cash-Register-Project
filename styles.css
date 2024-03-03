@@ -1,0 +1,132 @@
+:root {
+    --color1: #dc4f4b;
+    --color2: #ffffff;
+    --color3: #2d2b70;
+  }
+  
+  body {
+    text-align: center;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .customer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #change-due {
+    margin: 5px auto;
+  }
+  
+  #cash-label {
+    margin-bottom: 5px;
+  }
+  
+  #cash {
+    margin-bottom: 5px;
+  }
+  
+  #purchase-btn {
+    margin-bottom: 5px;
+    border-top: 3px solid #FFAC1C;
+    border-bottom: 3px solid #CD7F32;
+    border-right: 3px solid #CD7F32;
+    border-left: 3px solid #FFAC1C;
+    background: linear-gradient(#FFD580, #FFBF00);
+    font-weight: bold;
+  }
+  
+  .counter-div {
+    margin-top: 10px;
+    width: 80%;
+  }
+  
+  #product-price {
+    width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #87CEFA,#F0F8FF,#B2FFFF);
+    font-size: 1.25em;
+  }
+  
+  #change-display {
+    padding: 10px;
+    background: linear-gradient(45deg, #87CEFA,#F0F8FF,#B2FFFF)
+  }
+  
+  .box-1 {
+    width: 30%;
+    height: 10%;
+    position: relative;
+    left: 25%;
+    padding: 5px;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .box-2 {
+    height: 40px;
+    width: 5%;
+    position: relative;
+    left: 30%;
+    background-color: var(--color3);
+  }
+  
+  .box-3 {
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    background-color: var(--color3);
+  }
+  
+  #keys {
+    display: grid;
+    grid-template-columns: repeat(3, 30px); 
+    grid-template-rows: repeat(3, 30px);
+    grid-gap: 10px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .key {
+    border-radius: 5px;
+    background-color: var(--color1);
+    color: var(--color1);
+  }
+  
+  .box-4 {
+    width: 60%;
+    height: 50px;
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+    background-color: var(--color3);
+  }
+  
+  #dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color1);
+  }
+
+  @media screen and (min-width: 1000px) {
+    .counter-div {
+        width: 70%;
+    }
+  }
